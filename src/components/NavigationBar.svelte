@@ -9,7 +9,11 @@
     const navigations: NavigationItem[] = [
         { href: '/', label: 'Home' },
         { href: '/counter', label: 'Counter' },
-        { href: '/temperature', label: 'Temperature' }
+        { href: '/temperature', label: 'Temperature' },
+        { href: '/temperature1', label: 'Sample1' },
+        { href: '/temperature2', label: 'Sample2' },
+        { href: '/temperature3', label: 'Sample3' },
+        { href: '/temperature4', label: 'Sample4' },
     ]
 
     const location = useLocation()
