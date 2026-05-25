@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { useLocation } from 'svelte5-router'
+    import {useLocation} from 'svelte5-router'
 
     type NavigationItem = {
         href: string
@@ -7,10 +7,10 @@
     }
 
     const navigations: NavigationItem[] = [
-        { href: '/', label: 'Home' },
-        { href: '/counter', label: 'Counter' },
-        { href: '/temperature', label: 'Temperature' },
-        { href: '/temperature1', label: 'Sample1' }
+        {href: '/', label: 'Home'},
+        {href: '/counter', label: 'Counter'},
+        {href: '/temperature', label: 'Temperature'},
+        {href: '/temperature1', label: 'Sample1'}
     ]
 
     const location = useLocation()
@@ -19,16 +19,16 @@
 <div class="flex justify-center pt-4">
     <nav class="navigation-bar">
         <ul class="flex items-center flex-row gap-4">
-            {#each navigations as navigation}
-                {@const isActive = $location.pathname === navigation.href}
+            {#each navigations as {href, label}}
+                {@const isActive = $location.pathname === href}
 
                 <li>
                     <a
-                            href={navigation.href}
+                            href={href}
                             aria-current={isActive ? 'page' : undefined}
                             class={isActive ? 'nav-link-active' : 'nav-link'}
                     >
-                        {navigation.label}
+                        {label}
                     </a>
                 </li>
             {/each}
