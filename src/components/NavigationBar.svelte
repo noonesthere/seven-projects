@@ -10,10 +10,7 @@
         { href: '/', label: 'Home' },
         { href: '/counter', label: 'Counter' },
         { href: '/temperature', label: 'Temperature' },
-        { href: '/temperature1', label: 'Sample1' },
-        { href: '/temperature2', label: 'Sample2' },
-        { href: '/temperature3', label: 'Sample3' },
-        { href: '/temperature4', label: 'Sample4' },
+        { href: '/temperature1', label: 'Sample1' }
     ]
 
     const location = useLocation()
@@ -21,7 +18,7 @@
 
 <div class="flex justify-center pt-4">
     <nav class="navigation-bar">
-        <ul class="flex flex-row gap-2">
+        <ul class="flex items-center flex-row gap-4">
             {#each navigations as navigation}
                 {@const isActive = $location.pathname === navigation.href}
 
