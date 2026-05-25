@@ -5,11 +5,6 @@ import NavigationBar from "../components/NavigationBar.svelte";
 
 <NavigationBar />
 
-<section>
-    <nav>
-        <ul>
-            <li><a href="/counter">Counter</a></li>
-            <li><a href="/temperature">Temperature</a></li>
-        </ul>
-    </nav>
-</section>
+<div class="flex justify-center items-center min-h-screen gap-4">
+<h1>Home Page</h1>
+</div>
