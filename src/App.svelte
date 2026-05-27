@@ -6,6 +6,7 @@
     import NotFoundPage from "./pages/NotFoundPage.svelte";
     import FlightBookerPage from "./pages/FlightBookerPage.svelte";
     import TimerPage from "./pages/TimerPage.svelte";
+    import CrudPage from "./pages/CrudPage.svelte";
 </script>
 
 
@@ -16,6 +17,7 @@
         <Route path="/temperature" component={TemperatureCalculatorPage}></Route>
         <Route path="/flightbooker" component={FlightBookerPage}></Route>
         <Route path="/timer" component={TimerPage}></Route>
+        <Route path="/crud" component={CrudPage}></Route>
         <Route component={NotFoundPage}></Route>
     </Router>
 </section>

@@ -12,6 +12,7 @@
         {href: '/temperature', label: 'Temperature'},
         {href: '/flightbooker', label: 'Flight Booker'},
         {href: '/timer', label: 'Timer'},
+        {href: '/crud', label: 'Crud'},
         {href: '/temperature1', label: 'Sample1'}
     ]
 
