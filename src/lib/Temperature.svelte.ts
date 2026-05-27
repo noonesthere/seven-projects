@@ -1,22 +1,20 @@
 export class Temperature {
-    #c = $state(0)
-    #f = $state(0)
+    #celsius: number = $state(0)
+    #fahrenheit: number = $derived(this.#celsius * 9 /5 + 32)
 
-    get c() {
-        return this.#c
+    get celsius(): number {
+        return this.#celsius
     }
 
-    set c(c) {
-        this.#c = c
-        this.#f = c * (9 / 5) + 32
+    set celsius(value: number) {
+        this.#celsius = value
     }
 
-    get f() {
-        return this.#f
+    get fahrenheit(): number {
+        return this.#fahrenheit
     }
 
-    set f(f) {
-        this.#f=f;
-        this.#c = (f - 32) * (5 / 9)
+    set fahrenheit(value: number) {
+        this.#celsius = (value - 32) * (5 / 9)
     }
 }
